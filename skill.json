@@ -1,0 +1,41 @@
+{
+  "name": "genpark-pan-european-b2b-wholesale-brands-marketplace-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Pan-European B2B wholesale marketplace connecting independent concept retailers with emerging authentic brands with Net-60 credit terms.",
+  "author": "genpark",
+  "category": "b2b-wholesale",
+  "tags": [
+    "b2b-wholesale",
+    "independent-retailer",
+    "pan-european-commerce",
+    "net-60-terms",
+    "ankorstore"
+  ],
+  "inputs": {
+    "shop_name": {
+      "type": "string"
+    },
+    "primary_category": {
+      "type": "string"
+    },
+    "first_order_subtotal_eur": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "retailer_account_id": {
+      "type": "string"
+    },
+    "welcome_voucher_discount_eur": {
+      "type": "number"
+    },
+    "net_60_days_working_capital_credit_approved": {
+      "type": "boolean"
+    },
+    "free_pan_european_shipping_unlocked": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
